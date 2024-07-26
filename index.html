@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">Portfolio.</td>
+                <td id="navigation">
+                    <a href="#work">about</a>
+                    <a href="#bio">project</a>
+                    <a href="#skills">skills</a>
+                    <a href="#contact">contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Hi I'am Dhakschin Vishak</h1>
+                <button class="btn_one">My Resume</button><br>
+                <table>
+                    <tr>
+                        <a href="https://www.linkedin.com/in/dhakschin-vishak-50669b258/"><td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td></a>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="bio">
+        <h1>About</h1>
+        <p>I am an Electronics & Communication Engineering student at Sri Krishna College of Technology with a strong passion for technology and innovation. My proficiency in C++ and Java, coupled with my enthusiasm for Embedded Systems and IoT, drives me to explore and create cutting-edge solutions. I also possess front-end and web development skills, enabling me to design and develop interactive and user-friendly web applications. I am actively seeking core job opportunities to apply my skills and contribute to impactful projects.
+        </p>
+    </div>
+    <div id="work">
+        <h1>Projects</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="projcoffee.png">
+            <img onclick="magnify($(this).attr('src'))" src="Coffee2.png">
+            <img onclick="magnify($(this).attr('src'))" src="Netflixhome.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="404page.jpg">  
+            
+        </div>
+    </div>
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-list">
+            <div class="skill-item">
+                <i class="fab fa-cplusplus" style="color: #00599C;"></i>
+                <p>C++</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-java" style="color: #007396;"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-react" style="color: #61DAFB;"></i>
+                <p>React JS</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-html5" style="color: #E34F26;"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-node" style="color: #8CC84B;"></i>
+                <p>MERN Stack</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-aws" style="color: #FF9900;"></i>
+                <p>AWS Cloud Essentials</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-html5" style="color: #E34F26;"></i>
+                <p>Frontend Web Development</p>
+            </div>
+        </div>
+      </section>
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +91 9894264668</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; 727822tuec026@skct.edu.in</td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fas fa-fax"></i> &nbsp; +91 9894264668</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        134/27/1,<br>
+                                        Vijayanagar palace,<br>
+                                        Ooty -643001.
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social"><i class="fab fa-facebook"></i></a>
+                                        <a class="social"><i class="fab fa-twitter"></i></a>
+                                        <a class="social"><i class="fab fa-instagram"></i></a>
+                                        <a class="social"><i class="fab fa-dribbble"></i></a>
+                                        <a class="social"><i class="fab fa-medium"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        Made by Dhakschin Vishak M <br> <a href="">Hire me</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
